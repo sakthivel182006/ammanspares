@@ -160,28 +160,10 @@ function Home() {
           </video>
 
           {/* Overlay Container for Content */}
-<div className="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center text-white bg-dark bg-opacity-50 px-3">
-  <h1 className="mt-4 fw-bold">Welcome to Shri Amman Hydraulics Service & Welding Work</h1>
-  <h2 className="lead mt-2">
-    Located in <strong>Sathyamangalam</strong>, we specialize in providing top-tier hydraulic servicing and expert welding work for all your mechanical and industrial needs.
-  </h2>
-  <h1 className="mt-2">
-    <strong>Contact:</strong> Raja – <a href="tel:9080040143" className="text-warning text-decoration-none">90800 40143</a>
-  </h1>
-  <p className="mt-2">
-    Our services include complete maintenance and repair of <strong>JCBs, Hitachi machines, and all types of Earth Movers</strong>. We also handle:
-    <ul className="text-start mt-2" style={{ maxWidth: '600px' }}>
-      <li>Hydraulic pump repair and fitting</li>
-      <li>JCB cylinder welding and rod work</li>
-      <li>On-site emergency services</li>
-      <li>Earth mover engine & track maintenance</li>
-      <li>Heavy equipment structural welding</li>
-    </ul>
-  </p>
-  <h3>CLICK UPPER NAVBAR BOOKING THEN APPLY YOUR JOB THEN YOU WILL BE GETTING YOUR JOB</h3>
-  {loggedIn && <p className="lead mt-3">Welcome, <strong>{userName}</strong>!</p>}
-</div>
-
+          <div className="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center text-white bg-dark bg-opacity-50">
+            <h2 className="mt-4">Welcome To Tours And TRAVELS</h2>
+            {loggedIn && <p className="lead"> {userName}</p>}
+          </div>
         </div>
 
         {/* Booking Component */}

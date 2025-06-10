@@ -120,24 +120,20 @@ function Booking({ userId, onClose }) {
             {phoneError && <small className="text-danger">{phoneError}</small>}
           </div>
 
-<div className="mb-3">
-  <label className="form-label fw-bold">
-    <FaIdBadge className="me-2 text-secondary" /> Roll
-  </label>
-  <select
-    className="form-select"
-    name="roll"
-    value={formData.roll}
-    onChange={handleChange}
-    required
-  >
-    <option value="">-- Select your roll --</option>
-    <option value="Welding">Welding</option>
-    <option value="Hydraulic Service">Hydraulic Service</option>
-    <option value="Others">Others</option>
-  </select>
-</div>
-
+          <div className="mb-3">
+            <label className="form-label fw-bold">
+              <FaIdBadge className="me-2 text-secondary" /> Roll Number
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              name="roll"
+              placeholder="Enter your roll number"
+              value={formData.roll}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
           <div className="d-flex flex-column flex-md-row justify-content-between mt-4">
             <button type="submit" className="btn btn-success w-100 w-md-50 me-md-2 mb-2 mb-md-0">
